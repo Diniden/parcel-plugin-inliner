@@ -2,11 +2,28 @@
 
 A Parcel plugin to inline CSS and JS code in your HTML file.
 
+This is a fork of the original project to accommodate the case that some projects use multiple Parcel bundling targets.
+The targets all have small nuances between them thus only some targets may need to use this package. Thus, this fork
+adds the configuration options needed.
+
 This plugin uses [PostHTML](https://www.npmjs.com/package/posthtml) and [posthtml-inline-assets](https://www.npmjs.com/package/posthtml-inline-assets) to inline your HTML files.
 
 ## Usage
 
-Just install the plugin as a dependency using yarn or npm and build normally with Parcel. There are no configuration options.
+Just install the plugin as a dependency using yarn or npm and build normally with Parcel.
+
+This fork of the project requires a simple entry in your package.json:
+
+```json
+{
+  "inliner": {
+    "verbose": "boolean",
+    "paths": "string[]"
+  }
+}
+```
+
+The verbose flag is optional.
 
 #### Very important!
 

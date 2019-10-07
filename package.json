@@ -10,7 +10,8 @@
   "author": "Silvio Henrique Ferreira <shferreira@me.com>",
   "license": "MIT",
   "dependencies": {
-    "posthtml-inline-assets": "^3.0.0"
+    "posthtml-inline-assets": "3.0.0",
+    "posthtml": "0.11.6"
   },
   "peerDependencies": {
     "parcel-bundler": "^1.9.4"
@@ -26,5 +27,8 @@
     "inliner",
     "posthtml",
     "posthtml-inline-assets"
-  ]
+  ],
+  "devDependencies": {
+    "app-root-path": "2.2.1"
+  }
 }
